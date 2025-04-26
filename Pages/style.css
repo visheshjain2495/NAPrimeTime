@@ -1,0 +1,8 @@
+.top{
+    display: flex;
+    align-items: start;
+    justify-content:flex-start ;
+    gap: 20%;
+    margin-left: 10px;
+    max-width: 100%;
+}

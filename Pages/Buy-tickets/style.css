@@ -1,0 +1,58 @@
+.pass{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+.ticket-card {
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hidden{
+    display: none;
+}
+
+.show-cards{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.checkout-btn{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.seat-count{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.person{
+    padding: 10px;
+}
+
+.current-sel {
+    background-color: #A31D1D;
+    color: #f1efec;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.payment{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+}

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrimeTime</title>
+    <meta name="Author" content="Vishesh Jain"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../../assets/favicon/site.webmanifest">
+</head>
+<body>
+    <section id="navbar">
+      <div class="container-fluid navbartop">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+          <a href="../HomePage/Home.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <img class="bi me-2" width="40" height="32" src="../../assets/images/box.jpg" alt="box" style="padding-left: 10px;"/>
+            <span class="fs-4 heading-2" style="color: #f1efec;"><span style="color: #A31D1D;">Prime</span>Time</span>
+          </a>
+  
+          <ul class="nav nav-pills">
+            <li class="nav-item"><a href="../HomePage/Home.html"  class="nav-link heading-3" style="color: #f1efec;">Home</a></li>
+            <li class="nav-item"><a href="./Submit Your Film.html" class="nav-link active heading-3" aria-current="page" style="background-color:#A31D1D; color:#f1efec;" >Submit Your Film</a></li>
+            <li class="nav-item"><a href="../Buy-tickets/Buy Tickets.html" class="nav-link heading-3" style="color: #f1efec;">Buy Tickets</a></li>
+          </ul>
+        </header>
+      </div>
+    </section>
+
+    <section id="film-types"> 
+      <div class="container py-3">
+        <div class="row g-4 justify-content-center">
+          <div class="col-md-6 col-lg-5">
+            <div class="card shadow-sm h-100 submit-card" id= "s-film-card">
+              <div class="card-body text-center d-flex flex-column justify-content-center ">
+                <h2 class="card-title fw-bold heading">SHORT FILM</h2>
+                <hr>
+                 <p><ul style="text-align: justify;">
+                  <li>Here at <span style="color: #A31D1D;" class="heading-3">Prime</span><span class="heading-3">Time</span> we have a wide range of options for you to choose.</li>
+                  <li>Choose the type of film that suits you the best.</li>
+                  <li>The size of a short film should be no more than <strong>40 minutes</strong>.</li>
+                 </ul></p>
+                <div class="d-flex justify-content-center gap-3">
+                  <div class="btn btn-dark px-4 heading-3 film-sel-btn" id="s-sel">Select Film Type</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-5">
+            <div class="card shadow-sm h-100 submit-card" id= "f-film-card">
+              <div class="card-body text-center d-flex flex-column justify-content-center">
+                <h2 class="card-title fw-bold heading">FEATURED FILM</h2>
+                <hr>
+                <p><ul style="text-align: justify;">
+                  <li>Here at <span style="color: #A31D1D;" class="heading-3">Prime</span><span class="heading-3">Time</span> we have a wide range of options for you to choose.</li>
+                  <li>Choose the type of film that suits you the best.</li>
+                  <li>The size of a short film should be between <strong>41 minutes</strong> and <strong>180 minutes</strong>.</li>
+                 </ul></p>
+                <div class="d-flex justify-content-center gap-3">
+                  <div class="btn btn-dark px-4 heading-3 film-sel-btn" id="f-sel">Select Film Type</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="s-film-sel" class="hidden">
+      <div class="container-fluid text-center m-0">
+        <div class="top row">
+          <button type="button" class="btn btn-outline-dark s-film-submit-back col-1"><img src="../assets/svg/arrow-left.svg" alt="back-button"> Back</button>
+          <p class="heading d-flex align-items-center justify-content-center heading col-11">SHORT FILM</p>
+        </div>
+      </div>
+      <hr><br><br>
+      <p class="heading d-flex justify-content-center">Select The Type Of The Film That Suits You The Best.</p>
+
+      <div id="International-Short">
+      <p>
+        <button class="btn film-type-sel mx-5" type="button">
+          International Short <img class="chevron-icon" src="./assets/svg/chevron-down.svg" alt="chevron-down">
+        </button>
+      </p>
+      <div style="display: none;" class="International-Short-card">
+        <div class="card card-body submit-film-card-body mb-3 mx-5 mt-0">
+          International films of all genres — including documentary — with runtimes of 40 minutes or less (including credits). Upon submission, Films must have a World, International, or North American Premiere status. Films must be completed on or after September 5, 2024.
+          <br>
+          <a href="#" class="form-link-btn">
+            <button class="btn btn-outline-dark">Submit Now</button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div id="Documentry-Short">
+      <p>
+        <button class="btn film-type-sel mx-5" >
+          Documentary Short <img src="./assets/svg/chevron-down.svg" alt="chevron-down">
+        </button>
+      </p>
+      <div style="display: none;" class="Documentry-Short-card">
+        <div class="card card-body submit-film-card-body mb-3 mx-5 mt-0">
+          A short film that is a documentry and of length between 1 and 40 minutes.
+          <br>
+          <a href="#" class="form-link-btn">
+            <button class="btn btn-outline-dark">Submit Now</button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div id="New-York-City-Short">
+      <p>
+        <button class="btn film-type-sel mx-5">
+          New York City Short <img src="./assets/svg/chevron-down.svg" alt="chevron-down">
+        </button>
+      </p>
+      <div style="display: none;" class="New-York-City-Short-card">
+        <div class="card card-body submit-film-card-body mb-3 mx-5 mt-0">
+          A New Mexico Premiere is required in most cases. The film must have been shot partially in New Mexico, or the Director resides in New Mexico, or attended a New Mexico high school, or grew up in New Mexico. For a 30% discount code during the Earlybird and Regular Deadline write contact@santafe.film. 1-40 minutes in Length. esta categoría es para películas realizadas en los estados unidos dentro del estado de nuevo méxico.
+          <br>
+          <a href="#" class="form-link-btn">
+            <button class="btn btn-outline-dark">Submit Now</button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div id="Animated-Short">
+      <p>
+        <button class="btn film-type-sel mx-5" >
+          Animated Short <img src="./assets/svg/chevron-down.svg" alt="chevron-down">
+        </button>
+      </p>
+      <div style="display: none;" class="Animated-Short-card">
+        <div class="card card-body submit-film-card-body mb-3 mx-5 mt-0">
+          Animated short film of length between 1 to 40 minutes
+          <br>
+          <a href="#" class="form-link-btn">
+            <button class="btn btn-outline-dark">Submit Now</button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div id="Canadian-Short">
+      <p>
+        <button class="btn film-type-sel mx-5" >
+          Canadian Short <img src="./assets/svg/chevron-down.svg" alt="chevron-down">
+        </button>
+      </p>
+      <div style="display: none;" class="Canadian-Short-card">
+        <div class="card card-body submit-film-card-body mb-3 mx-5 mt-0">
+          Short films of all genres — including documentary — with runtimes of 40 minutes or less (including credits). Films in this category are: i) directed by a Canadian citizen or permanent resident of Canada and; ii) list Canada as a major country of production and/or have a credited producer or co-producer who is a Canadian citizen or permanent resident of Canada. Upon submission, Films must have a World, International, or North American Premiere status. Films must be completed on or after September 5, 2024.
+          <br>
+          <a href="#" class="form-link-btn">
+            <button class="btn btn-outline-dark">Submit Now</button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div id="Narrative-Short">
+      <p>
+        <button class="btn film-type-sel mx-5" >
+          Narrative Short <img src="./assets/svg/chevron-down.svg" alt="chevron-down">
+        </button>
+      </p>
+      <div style="display: none;" class="Narrative-Short-card">
+        <div class="card card-body submit-film-card-body mb-3 mx-5 mt-0">
+          1-40 minutes in Length
+          <br>
+          <a href="#" class="form-link-btn">
+            <button class="btn btn-outline-dark">Submit Now</button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    </section>
+
+    <section id="f-film-sel" class="hidden">
+      <div class="container-fluid text-center m-0">
+        <div class="top row">
+          <button type="button" class="btn btn-outline-dark f-film-submit-back col-1"><img src="../assets/svg/arrow-left.svg" alt="back-button"> Back</button>
+          <p class="heading d-flex align-items-center justify-content-center heading col-11">FEATURED FILM</p>
+        </div>
+      </div>
+      <hr><br><br>
+      <p class="heading d-flex justify-content-center">Select The Type Of The Film That Suits You The Best.</p>
+
+      <div id="International-Feature">
+        <p>
+          <button class="btn film-type-sel mx-5" type="button">
+            International Feature <img class="chevron-icon" src="./assets/svg/chevron-down.svg" alt="chevron-down">
+          </button>
+        </p>
+        <div style="display: none;" class="International-Feature-card">
+          <div class="card card-body submit-film-card-body mb-3 mx-5 mt-0">
+            International narrative films with runtimes of 60 minutes or longer (including credits). Upon submission, Films must have a World, International, or North American Premiere status. Films must be completed on or after September 5, 2024.
+            <br>
+            <a href="#" class="form-link-btn">
+              <button class="btn btn-outline-dark">Submit Now</button>
+            </a>
+          </div>
+        </div>
+      </div>
+  
+      <div id="Documentry-Feature">
+        <p>
+          <button class="btn film-type-sel mx-5" >
+            Documentary Feature <img src="./assets/svg/chevron-down.svg" alt="chevron-down">
+          </button>
+        </p>
+        <div style="display: none;" class="Documentry-Feature-card">
+          <div class="card card-body submit-film-card-body mb-3 mx-5 mt-0">
+            The documentary may run between 41 minutes and 3 hours. To have a longer film considered, please contact SFIFF.
+            <br>
+            <a href="#" class="form-link-btn">
+              <button class="btn btn-outline-dark">Submit Now</button>
+            </a>
+          </div>
+        </div>
+      </div>
+  
+      <div id="New-York-City-Feature">
+        <p>
+          <button class="btn film-type-sel mx-5">
+            New York City Feature <img src="./assets/svg/chevron-down.svg" alt="chevron-down">
+          </button>
+        </p>
+        <div style="display: none;" class="New-York-City-Feature-card">
+          <div class="card card-body submit-film-card-body mb-3 mx-5 mt-0">
+            A New Mexico Premiere is required in most cases. The film must have been shot partially in New Mexico, or the Director resides in New Mexico, attended a New Mexico high school, or grew up in New Mexico. For a 30% discount code during the Earlybird and Regular Deadline, please write jena@santafe.film. The film may run between 41 minutes and 3 hours. esta categoría es para películas realizadas en los estados unidos dentro del estado de nuevo méxico.
+            <br>
+            <a href="#" class="form-link-btn">
+              <button class="btn btn-outline-dark">Submit Now</button>
+            </a>
+          </div>
+        </div>
+      </div>
+  
+      <div id="Animated-Feature">
+        <p>
+          <button class="btn film-type-sel mx-5" >
+            Animated Feature <img src="./assets/svg/chevron-down.svg" alt="chevron-down">
+          </button>
+        </p>
+        <div style="display: none;" class="Animated-Feature-card">
+          <div class="card card-body submit-film-card-body mb-3 mx-5 mt-0">
+            The Animated Feature may run between 41 minutes and 3 hours. To have a longer film considered, please contact SFIFF.
+            <br>
+            <a href="#" class="form-link-btn">
+              <button class="btn btn-outline-dark">Submit Now</button>
+            </a>
+          </div>
+        </div>
+      </div>
+  
+      <div id="Canadian-Feature">
+        <p>
+          <button class="btn film-type-sel mx-5" >
+            Canadian Feature <img src="./assets/svg/chevron-down.svg" alt="chevron-down">
+          </button>
+        </p>
+        <div style="display: none;" class="Canadian-Feature-card">
+          <div class="card card-body submit-film-card-body mb-3 mx-5 mt-0">
+            Narrative films with runtimes of 60 minutes or longer (including credits). Films in this category are: i) directed by a Canadian citizen or permanent resident of Canada; and ii) list Canada as a major country of production and/or have a credited producer or co-producer who is a Canadian citizen or permanent resident of Canada. Upon submission, films must have a World, International, or North American Premiere status. Films must be completed on or after September 5, 2024.
+            <br>
+            <a href="#" class="form-link-btn">
+              <button class="btn btn-outline-dark">Submit Now</button>
+            </a>
+          </div>
+        </div>
+      </div>
+  
+      <div id="Narrative-Feature">
+        <p>
+          <button class="btn film-type-sel mx-5" >
+            Narrative Feature <img src="./assets/svg/chevron-down.svg" alt="chevron-down">
+          </button>
+        </p>
+        <div style="display: none;" class="Narrative-Feature-card">
+          <div class="card card-body submit-film-card-body mb-3 mx-5 mt-0">
+            The narrative may run between 41 minutes and 3 hours. To have a longer film considered, please contact SFIFF.
+            <br>
+            <a href="#" class="form-link-btn">
+              <button class="btn btn-outline-dark">Submit Now</button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/js/bootstrap.bundle.min.js" integrity="sha384-YUe2LzesAfftltw+PEaao2tjU/QATaW/rOitAq67e0CT0Zi2VVRL0oC4+gAaeBKu" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+    <script>
+      if (window.location.pathname.endsWith(".html")) {
+        window.history.replaceState(null, "", window.location.pathname.replace(".html", ""));
+      }
+    </script>
+  </body>
+  </html>

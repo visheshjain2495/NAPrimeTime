@@ -1,0 +1,53 @@
+body{
+    background-color: #f1efec;
+    margin: 0%;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.heading{
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2rem;
+}
+
+.heading-2{
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+.heading-3{
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+}
+
+.heading-4{
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.8rem;
+}
+
+.navbartop{
+    background-color:  #030303;
+    padding: 0%;
+    margin: 0%;
+}
+
+.nav-pills{
+    padding-right: 20px;
+}
+
+@media(max-width: 768px) {
+    .nav-pills{
+        padding-left: 20px;
+        padding-right: 0%;
+    }
+}
