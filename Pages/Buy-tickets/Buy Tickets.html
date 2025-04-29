@@ -64,7 +64,53 @@
     </div>
   </section>
 
-  <section id="morning-show" class="hidden">
+  <section id = "morning-show" class = "hidden">
+
+    <div class="top">
+      <button type="button" class="btn btn-outline-dark movie-back-btn-morning"><img src="../assets/svg/arrow-left.svg" alt="back-button"> Back</button>
+      <p class="heading d-flex align-items-center justify-content-center">You Will Be Able To See These Movies</p>
+    </div>
+
+    <hr>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-2">
+      <div class="movie-card">
+        <img src="./assets/images/FinalDestination.jpg" alt="Final Destination" class = "movie-poster">
+        <p style="margin-left:10px; margin-bottom: 0; font-size: 16px;"><strong>The Final Destination</strong></p>
+      </div>
+        
+      <div class="movie-card">
+        <img src="./assets/images/CaptainAmerica.jpeg" alt="Captain America" class = "movie-poster">
+        <p style="margin-left:10px; margin-bottom: 0; font-size: 16px;"><strong>captian America</strong></p>
+      </div>
+
+      <div class="movie-card">
+        <img src="./assets/images/MissionImpossible.jpg" alt="Mission Impossible" class = "movie-poster">
+        <p style="margin-left:10px; margin-bottom: 0; font-size: 16px;"><strong>Mission Impossible</strong></p>
+      </div>
+
+      <div class="movie-card">
+        <img src="./assets/images/TheAmeature.jpg" alt="The Ameature" class = "movie-poster">
+        <p style="margin-left:10px; margin-bottom: 0; font-size: 16px;"><strong>The Ameature</strong></p>
+      </div>
+
+      <div class="movie-card">
+        <img src="./assets/images/TheKingOfKings.jpg" alt="The King Of Kings" class = "movie-poster">
+        <p style="margin-left:10px; margin-bottom: 0; font-size: 16px;"><strong>The king Of Kings</strong></p>
+      </div>
+    </div>
+
+    <div class="ms-3 d-flex">
+      <p class="heading-2">Watch The movie at:</p>
+      <a href="https://maps.app.goo.gl/gbSAU3X59erRxW3cA" style="text-decoration: none; color: blue;" class="heading-2"><img src="./assets/svg/geo-alt.svg" alt="location"><em>New York, NY</em></a>
+    </div>
+
+    <div class="checkout-btn">
+      <button type="button" class="btn btn-dark" id="morning-checkout-btn">BUY TICKETS</button>
+    </div>
+
+  </section>
+
+  <!-- <section id="morning-show" class="hidden">
 
     <div class="top">
       <button type="button" class="btn btn-outline-dark movie-back-btn-morning"><img src="../assets/svg/arrow-left.svg" alt="back-button"> Back</button>
@@ -116,7 +162,7 @@
       <button type="button" class="btn btn-dark" id="morning-checkout-btn">BUY TICKETS</button>
     </div>
 
-  </section>
+  </section> -->
 
   <section id="evening-show" class="hidden">
     <div class="top">
@@ -170,7 +216,7 @@
     </div>
   </section>
 
-  <section id="morning-checkout" class="hidden">
+  <!-- <section id="morning-checkout" class="hidden">
     <div class="top">
       <button type="button" class="btn btn-outline-dark morning-checkout-back-btn"><img src="../assets/svg/arrow-left.svg" alt="back-button"> Back</button>
       <p class="heading d-flex align-items-center justify-content-center" style="margin-left: 10%;">CHECKOUT</p>
@@ -251,17 +297,17 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="./index.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/js/bootstrap.bundle.min.js" integrity="sha384-YUe2LzesAfftltw+PEaao2tjU/QATaW/rOitAq67e0CT0Zi2VVRL0oC4+gAaeBKu" crossorigin="anonymous"></script>
-  <script>
+  <!-- <script>
     if (window.location.pathname.endsWith(".html")) {
       window.history.replaceState(null, "", window.location.pathname.replace(".html", ""));
-    }
+    } -->
   </script>
 </body>
 </html>

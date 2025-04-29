@@ -56,3 +56,15 @@
     list-style: none;
     gap: 20px;
 }
+
+.movie-poster{
+    height: 210px;
+    width: 140px;
+    margin-left: 10px;
+}
+
+.movie-card{
+    height: 250px;
+    width: 140px;
+    margin: 50px;
+}

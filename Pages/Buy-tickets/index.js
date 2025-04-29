@@ -46,10 +46,10 @@ $(".evening-checkout-back-btn").click(()=>{
     },400);    
 });
 
-$("#morning-checkout-btn").click(()=>{
-    $("#morning-show").addClass("hidden").show().fadeOut(400);
-    $("#morning-checkout").removeClass("hidden").hide().fadeIn(400);
-});
+// $("#morning-checkout-btn").click(()=>{
+//     $("#morning-show").addClass("hidden").show().fadeOut(400);
+//     $("#morning-checkout").removeClass("hidden").hide().fadeIn(400);
+// });
 
 $(".morning-checkout-back-btn").click(()=>{
     $("#morning-checkout").addClass("hidden").show().fadeOut(400);
