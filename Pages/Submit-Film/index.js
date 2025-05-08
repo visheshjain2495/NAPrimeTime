@@ -37,8 +37,8 @@ $("#International-Short > p").click(function(){
       }
 });
 
-$("#Documentry-Short > p").click(function(){
-    $(".Documentry-Short-card").slideToggle(400);
+$("#US-Short > p").click(function(){
+    $(".US-Short-card").slideToggle(400);
 
     var icon = $(this).find("img");
     if (icon.attr("src") === "./assets/svg/chevron-down.svg") {
@@ -112,6 +112,28 @@ $("#Documentry-Feature > p").click(function(){
       } else {
         icon.attr("src", "./assets/svg/chevron-down.svg");
       }
+});
+
+$("#US-Feature > p").click(function(){
+  $(".US-Feature-card").slideToggle(400);
+
+  var icon = $(this).find("img");
+  if (icon.attr("src") === "./assets/svg/chevron-down.svg") {
+      icon.attr("src", "./assets/svg/chevron-up.svg");
+    } else {
+      icon.attr("src", "./assets/svg/chevron-down.svg");
+    }
+});
+
+$("#US-Documentry-Feature > p").click(function(){
+  $(".US-Documentry-Feature-card").slideToggle(400);
+
+  var icon = $(this).find("img");
+  if (icon.attr("src") === "./assets/svg/chevron-down.svg") {
+      icon.attr("src", "./assets/svg/chevron-up.svg");
+    } else {
+      icon.attr("src", "./assets/svg/chevron-down.svg");
+    }
 });
 
 $("#New-York-City-Feature > p").click(function(){
